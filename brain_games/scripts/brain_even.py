@@ -8,11 +8,9 @@ from brain_games.scripts.brain_games import greet
 
 def main():
     greet()
-    
     name = prompt.string("May I have your name?")
     print(f"Hello, {name}!")
     print('Answer "yes" if the number is even, otherwise answer "no".')
-
     i = 0
     while i < 3:
         number = random.randint(0, 100)
@@ -23,7 +21,7 @@ def main():
                 print('Correct!')
             else:
                 print(f"Let's try again, {name}!")
-                break 
+                break
         if number % 2 != 0:
             if answer == "yes":
                 print(f"Let's try again, {name}!")

@@ -15,7 +15,7 @@ publish:
 
 
 package-install:
-		python3 -m pip install --user dist/*.whl
+		python3 -m pip install --user --force dist/*.whl
 
 
 make lint:
