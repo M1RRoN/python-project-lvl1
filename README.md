@@ -5,3 +5,4 @@
 
 asciinema step 5 - https://asciinema.org/a/6GDHkA1yRyBZxlfVX039zbTtd
 asciinema step 6 - https://asciinema.org/a/ndWaB98cEx0qPe1Pdqs5TlLof
+asciinema step 7 - https://asciinema.org/a/8au4qw2cFeov6njVFT0sWKla8
