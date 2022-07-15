@@ -2,8 +2,8 @@
 
 
 import random
+from brain_games.scripts.brain_logic import greet
 import prompt
-from brain_games.scripts.brain_games import greet
 
 
 def main():
@@ -13,7 +13,7 @@ def main():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
     while i < 3:
-        number = random.randint(0, 100)
+        number = random.randint(-100, 100)
         print(f'Question: {number}')
         answer = prompt.string("You answer: ")
         if number % 2 == 0:
