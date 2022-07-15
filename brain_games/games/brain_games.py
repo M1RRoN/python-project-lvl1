@@ -11,7 +11,3 @@ def main():
     brain_gcd
     brain_prime
     brain_progression
-    
-
-if __name__ == '__main__':
-    main()
