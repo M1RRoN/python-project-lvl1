@@ -5,5 +5,5 @@ from brain_games.scripts.brain_logic import brain_even, greet
 
 
 def main():
-    greet
-    brain_even
+    greet()
+    brain_even()

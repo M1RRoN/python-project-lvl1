@@ -5,5 +5,5 @@ from brain_games.scripts.brain_logic import brain_progression, greet
 
 
 def main():
-    greet
-    brain_progression
+    greet()
+    brain_progression()
