@@ -8,7 +8,6 @@ def greet():
 
 def main():
     greet()
-    welcome_user()
 
 
 if __name__ == '__main__':
