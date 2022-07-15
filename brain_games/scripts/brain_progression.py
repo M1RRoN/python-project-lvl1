@@ -11,9 +11,6 @@ def main():
     name = prompt.string("May I have your name?")
     print(f"Hello, {name}!")
     print('What number is missing in the progression?')
-
-    
-
     i = 0
     while i < 3:
         num1 = random.randint(1, 10)

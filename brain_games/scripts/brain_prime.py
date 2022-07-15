@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 
+
 import sympy
 import random
 import prompt
 from brain_games.scripts.brain_games import greet
-
-
-
 
 
 def main():
@@ -19,7 +17,6 @@ def main():
         number = random.randint(0, 100)
         print(f'Question: {number}')
         answer = prompt.string("You answer: ")
-        
         if sympy.isprime(number):
             correct_answer = "yes"
             if answer == correct_answer:
@@ -36,9 +33,6 @@ def main():
                 print(f"{answer} is wrong answer ;(. Correct answer was '{correct_answer}'.")
                 print(f"Let's try again, {name}!")
                 break
-
         i += 1
         if i == 3:
             print(f"Congratulations, {name}!")
-
-        
