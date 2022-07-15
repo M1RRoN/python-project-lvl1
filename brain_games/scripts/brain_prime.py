@@ -20,7 +20,7 @@ def main():
         print(f'Question: {number}')
         answer = prompt.string("You answer: ")
         
-        if sympy.isprime(number) == True:
+        if sympy.isprime(number):
             correct_answer = "yes"
             if answer == correct_answer:
                 print('Correct!')
