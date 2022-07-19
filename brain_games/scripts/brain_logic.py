@@ -3,7 +3,6 @@
 
 import prompt
 import random
-#import sympy
 
 
 def greet():
@@ -100,7 +99,7 @@ def brain_prime():
         number = random.randint(0, 100)
         print(f'Question: {number}')
         answer = prompt.string("You answer: ")
-        if sympy.isprime(number):
+        if is_prime(number):
             correct_answer = "yes"
             if answer == correct_answer:
                 print('Correct!')
@@ -119,6 +118,13 @@ def brain_prime():
         i += 1
         if i == 3:
             print(f"Congratulations, {name}!")
+
+
+def is_prime(n):
+    d = 2
+    while d * d <= n and n % d != 0:
+        d += 1
+    return d * d > n
 
 
 def brain_progression():
