@@ -99,7 +99,11 @@ def brain_prime():
         number = random.randint(0, 100)
         print(f'Question: {number}')
         answer = prompt.string("You answer: ")
-        if is_prime(number):
+        k = 0
+        for j in range(2, number // 2 + 1):
+            if number % j == 0:
+                k += 1
+        if k <= 0:
             correct_answer = "yes"
             if answer == correct_answer:
                 print('Correct!')
@@ -118,13 +122,6 @@ def brain_prime():
         i += 1
         if i == 3:
             print(f"Congratulations, {name}!")
-
-
-def is_prime(n):
-    d = 2
-    while d * d <= n and n % d != 0:
-        d += 1
-    return d * d > n
 
 
 def brain_progression():
