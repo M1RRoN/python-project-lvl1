@@ -3,7 +3,7 @@
 
 import prompt
 import random
-import sympy
+#import sympy
 
 
 def greet():
