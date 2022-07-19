@@ -66,8 +66,8 @@ def brain_gcd():
     print('Find the greatest common divisor of given numbers.')
     i = 0
     while i < 3:
-        num1 = random.randint(0, 100)
-        num2 = random.randint(0, 100)
+        num1 = random.randint(1, 100)
+        num2 = random.randint(1, 100)
         print(f'Question: {num1} {num2}')
         answer = prompt.string("You answer: ")
         if int(answer) == gcd(num1, num2):
@@ -137,7 +137,7 @@ def brain_progression():
         for j in range(num1, num2, n):
             numbers.append(j)
         numbers.sort()
-        random_index = random.randint(0, 9)
+        random_index = random.randint(0, 4)
         correct_answer = numbers[random_index]
         numbers[random_index] = ".."
         string = " ".join(map(str, numbers[0:5]))
