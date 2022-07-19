@@ -140,7 +140,7 @@ def brain_progression():
         random_index = random.randint(0, 9)
         correct_answer = numbers[random_index]
         numbers[random_index] = ".."
-        string = " ".join(map(str, numbers[0:10]))
+        string = " ".join(map(str, numbers[0:5]))
         print(f'Question: {string}')
         answer = prompt.string("You answer: ")
         if int(answer) == int(correct_answer):
