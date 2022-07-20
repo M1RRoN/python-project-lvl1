@@ -104,7 +104,7 @@ def brain_prime():  # noqa: C901
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     i = 0
     while i < 3:
-        number = random.randint(0, 100)
+        number = random.randint(1, 100)
         print(f'Question: {number}')
         answer = prompt.string("You answer: ")
         k = 0
