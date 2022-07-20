@@ -5,8 +5,16 @@ import prompt
 import random
 
 
+message = "is wrong answer ;(. Correct answer was"
+
+
 def greet():
     print("Welcome to the Brain Games!")
+
+
+def welcome_user():
+    name = prompt.string("May I have your name?")
+    print(f"Hello, {name}!")
 
 
 def brain_calc():
@@ -24,7 +32,7 @@ def brain_calc():
         if int(answer) == int(result):
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{result}'.")
+            print(f"'{answer}' {message} '{result}'.")
             print(f"Let's try again, {name}!")
             break
         i += 1
@@ -45,12 +53,12 @@ def brain_even():
             if answer == "yes":
                 print('Correct!')
             else:
-                print(f"{answer} is wrong answer ;(. Correct answer was 'yes'.")
+                print(f"{answer} {message} 'yes'.")
                 print(f"Let's try again, {name}!")
                 break
-        if number % 2 != 0:
+        else:
             if answer == "yes":
-                print(f"{answer} is wrong answer ;(. Correct answer was 'no'.")
+                print(f"{answer} {message} 'no'.")
                 print(f"Let's try again, {name}!")
                 break
             else:
@@ -73,7 +81,7 @@ def brain_gcd():
         if int(answer) == gcd(num1, num2):
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{gcd(num1, num2)}'.")
+            print(f"'{answer}' {message} '{gcd(num1, num2)}'.")
             print(f"Let's try again, {name}!")
             break
         i += 1
@@ -90,7 +98,7 @@ def gcd(num1, num2):
     return(num1)
 
 
-def brain_prime():
+def brain_prime():  # noqa: C901
     name = prompt.string("May I have your name?")
     print(f"Hello, {name}!")
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
@@ -108,7 +116,7 @@ def brain_prime():
             if answer == correct_answer:
                 print('Correct!')
             else:
-                print(f"{answer} is wrong answer ;(. Correct answer was '{correct_answer}'.")
+                print(f"{answer} {message} '{correct_answer}'.")
                 print(f"Let's try again, {name}!")
                 break
         else:
@@ -116,7 +124,7 @@ def brain_prime():
             if answer == correct_answer:
                 print('Correct!')
             else:
-                print(f"{answer} is wrong answer ;(. Correct answer was '{correct_answer}'.")
+                print(f"{answer} {message} '{correct_answer}'.")
                 print(f"Let's try again, {name}!")
                 break
         i += 1
@@ -146,7 +154,7 @@ def brain_progression():
         if int(answer) == int(correct_answer):
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{answer}' {message} '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             break
         i += 1
