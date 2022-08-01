@@ -3,7 +3,8 @@
 
 import random
 import prompt
-from brain_games.games.brain_logic import congratulations, greet, player_name, comparison
+from brain_games.games.brain_logic import congratulations, greet
+from brain_games.games.brain_logic import player_name, comparison
 
 
 def brain_prime():  # noqa: C901
