@@ -21,4 +21,4 @@ def brain_gcd():
             break
         i += 1
         if i == 3:
-            congratulations
+            congratulations()
