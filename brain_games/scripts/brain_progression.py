@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 
 
-from brain_games.scripts.brain_logic import brain_progression, greet
+from brain_games.games.brain_progression import brain_progression
 
 
 def main():
-    greet()
     brain_progression()
+
+
+if __name__ == '__main__':
+    main()
