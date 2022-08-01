@@ -9,26 +9,22 @@
 - asciinema step 8 - https://asciinema.org/a/N6zrcqCztcyESpXKnJdkHdhcY
 - asciinema step 9 - https://asciinema.org/a/UfZiJtqz4TEqZatNcdWD91FQJ
 
-Installation:
-Make sure you are running at least Python 3.8.10
-$ git clone https://github.com/M1RRoN/python-project-lvl1
-install:
-		poetry install
+<br>Installation:<br>
+<br>Make sure you are running at least Python 3.8.10<br>
+<br>$ git clone https://github.com/M1RRoN/python-project-lvl1<br>
+<br>install: poetry install<br>
 
-build:
-		poetry build
+<br>build: poetry build<br>
 
-package-install:
-		python3 -m pip install --user --force dist/*.whl
+<br>package-install: python3 -m pip install --user --force dist/*.whl<br>
 
-brain-games:
-		poetry run brain-games
+<br>brain-games: poetry run brain-games<br>
 
-Start Game:
-$ brain-games
-$ brain-calc
-$ brain-even
-$ brain-gcd
-$ brain-prime
-$ brain-progression
+<br>Start Game:<br>
+<br>$ brain-games<br>
+<br>$ brain-calc<br>
+<br>$ brain-even<br>
+<br>$ brain-gcd<br>
+<br>$ brain-prime<br>
+<br>$ brain-progression<br>
 
