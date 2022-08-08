@@ -21,7 +21,7 @@
 
 - asciinema step 9
 
-[![asciicast](https://asciinema.org/a/UfZiJtqz4TEqZatNcdWD91FQJ.svg)](https://asciinema.org/a/UfZiJtqz4TEqZatNcdWD91FQJ)
+[![asciicast](https://asciinema.org/a/4sp4kfWR10rrZP0DV4wTvtG1u.svg)](https://asciinema.org/a/4sp4kfWR10rrZP0DV4wTvtG1u)
 
 
 Installation:
