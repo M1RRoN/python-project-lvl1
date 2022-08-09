@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
 
-from brain_games.games.brain_games import brain_games
+from brain_games.games.brain_logic import welcome_name
 
 
 def main():
-    brain_games()
+    welcome_name()
 
 
 if __name__ == '__main__':

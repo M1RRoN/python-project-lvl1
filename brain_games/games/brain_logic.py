@@ -1,27 +1,45 @@
-#!/usr/bin/env python3
-
-
 import prompt
 
 
-message = 'is wrong answer ;(. Correct answer was'
+MESSAGE = 'is wrong answer ;(. Correct answer was'
+NUMBER_OF_GAMES = 3
 
 
-def greet():
+def welcome_name():
     print('Welcome to the Brain Games!')
-
-
-def player_name():
     global name
     name = prompt.string('May I have your name?')
     print(f'Hello, {name}!')
+    return name
+
+
+def player_answer():
+    if correct_answer == 'yes' or 'no':
+        answer = prompt.string('You answer: ')
+    else:
+        answer = prompt.string('You answer: ')
+    return comparison(answer, correct_answer)
+
+
+def the_game(game):
+    welcome_name()
+    print(game.DESCRIPTION)
+    for i in range(NUMBER_OF_GAMES):
+        global correct_answer
+        correct_answer = game.get_question_and_answer()
+        answer = player_answer()
+        if answer is False:
+            break
+        if i == 2:
+            congratulations()
 
 
 def comparison(answer, correct_answer):
     if answer == correct_answer:
         print('Correct!')
+        return True
     else:
-        print(f"{answer} {message} '{correct_answer}'.")
+        print(f"{answer} {MESSAGE} '{correct_answer}'.")
         print(f"Let's try again, {name}!")
         return False
 
