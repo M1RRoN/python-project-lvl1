@@ -28,6 +28,7 @@ Installation:
 
 Make sure you are running at least Python 3.8.10
 
+```
 $ git clone https://github.com/M1RRoN/python-project-lvl1
 
 install: poetry install
@@ -37,9 +38,11 @@ build: poetry build
 package-install: python3 -m pip install --user --force dist/*.whl
 
 brain-games: poetry run brain-games
+```
 
 Start Game:
 
+```
 $ brain-games
 
 $ brain-calc
@@ -51,3 +54,4 @@ $ brain-gcd
 $ brain-prime
 
 $ brain-progression
+```
