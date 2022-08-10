@@ -23,7 +23,6 @@
 
 [![asciicast](https://asciinema.org/a/4sp4kfWR10rrZP0DV4wTvtG1u.svg)](https://asciinema.org/a/4sp4kfWR10rrZP0DV4wTvtG1u)
 
-
 Installation:
 
 Make sure you are running at least Python 3.8.10
