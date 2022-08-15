@@ -2,10 +2,12 @@ import random
 
 
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+MIN = 0
+MAX = 100
 
 
 def get_question_and_answer():
-    number = random.randint(0, 100)
+    number = random.randint(MIN, MAX)
     print(f'Question: {number}')
     if number % 2 == 0:
         correct_answer = 'yes'

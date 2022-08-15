@@ -21,7 +21,7 @@ def player_answer():
     return comparison(answer, correct_answer)
 
 
-def the_game(game):
+def play(game):
     welcome_name()
     print(game.DESCRIPTION)
     for i in range(NUMBER_OF_GAMES):

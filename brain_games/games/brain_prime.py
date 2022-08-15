@@ -2,10 +2,12 @@ import random
 
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MIN = 2
+MAX = 20
 
 
 def get_question_and_answer():
-    number = random.randint(1, 100)
+    number = random.randint(MIN, MAX)
     print(f'Question: {number}')
     k = 0
     for j in range(2, number // 2 + 1):
