@@ -2,7 +2,7 @@ import random
 
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-MIN = 2
+MIN = 3
 MAX = 20
 
 
