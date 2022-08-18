@@ -5,6 +5,8 @@ DESCRIPTION = 'What number is missing in the progression?'
 NUM1_MIN, NUM1_MAX = 1, 10
 NUM2_MIN, NUM2_MAX = 80, 100
 N_MIN, N_MAX = 2, 10
+RANDOM_INDEX_MIN, RANDOM_INDEX_MAX = 0, 4
+NUMBER_OF_PROGRESSION_SYMBOLS = 5
 
 
 def get_question_and_answer():
@@ -15,9 +17,9 @@ def get_question_and_answer():
     for j in range(num1, num2, n):
         numbers.append(j)
     numbers.sort()
-    random_index = random.randint(0, 4)
+    random_index = random.randint(RANDOM_INDEX_MIN, RANDOM_INDEX_MAX)
     correct_answer = numbers[random_index]
     numbers[random_index] = '..'
-    string = ' '.join(map(str, numbers[0:5]))
-    print(f'Question: {string}')
-    return str(correct_answer)
+    string = ' '.join(map(str, numbers[:NUMBER_OF_PROGRESSION_SYMBOLS]))
+    question = f'Question: {string}'
+    return question, str(correct_answer)

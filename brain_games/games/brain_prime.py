@@ -2,19 +2,27 @@ import random
 
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-MIN = 3
-MAX = 20
+MIN_NUMBER = 0
+MAX_NUMBER = 20
 
 
 def get_question_and_answer():
-    number = random.randint(MIN, MAX)
-    print(f'Question: {number}')
-    k = 0
-    for j in range(2, number // 2 + 1):
-        if number % j == 0:
-            k += 1
-        if k <= 0:
-            correct_answer = 'yes'
-        else:
-            correct_answer = 'no'
-    return correct_answer
+    global number
+    number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    question = f'Question: {number}'
+    if is_prime(number) is True:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
+    return question, correct_answer
+
+
+def is_prime(number):
+    if number < 2:
+        return False
+    for i in range(2, int(number ** 0.5 + 1)):
+        if number % i == 0:
+            return False
+    else:
+        return True
+    

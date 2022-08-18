@@ -1,7 +1,6 @@
 import prompt
 
 
-MESSAGE = 'is wrong answer ;(. Correct answer was'
 NUMBER_OF_GAMES = 3
 
 
@@ -26,11 +25,12 @@ def play(game):
     print(game.DESCRIPTION)
     for i in range(NUMBER_OF_GAMES):
         global correct_answer
-        correct_answer = game.get_question_and_answer()
+        question, correct_answer = game.get_question_and_answer()
+        print(question)
         answer = player_answer()
         if answer is False:
             break
-        if i == 2:
+        if i == NUMBER_OF_GAMES:
             congratulations()
 
 
@@ -39,8 +39,8 @@ def comparison(answer, correct_answer):
         print('Correct!')
         return True
     else:
-        print(f"{answer} {MESSAGE} '{correct_answer}'.")
-        print(f"Let's try again, {name}!")
+        print(f'{answer} is wrong answer ;(. Correct answer was \'{correct_answer}\'.')
+        print(f'Let\'s try again, {name}!')
         return False
 
 
