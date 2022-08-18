@@ -1,8 +1,6 @@
 import random
 import math
 
-from brain_games.games.brain_even import MIN_NUMBER
-
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 MIN_NUM = 1

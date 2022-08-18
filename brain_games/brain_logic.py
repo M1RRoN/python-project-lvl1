@@ -39,7 +39,8 @@ def comparison(answer, correct_answer):
         print('Correct!')
         return True
     else:
-        print(f'{answer} is wrong answer ;(. Correct answer was \'{correct_answer}\'.')
+        wrong_answer = 'is wrong answer ;(. Correct answer was'
+        print(f'{answer} {wrong_answer} \'{correct_answer}\'.')
         print(f'Let\'s try again, {name}!')
         return False
 

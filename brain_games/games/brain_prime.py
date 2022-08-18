@@ -25,4 +25,3 @@ def is_prime(number):
             return False
     else:
         return True
-    
