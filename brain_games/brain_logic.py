@@ -23,7 +23,7 @@ def player_answer():
 def play(game):
     welcome_name()
     print(game.DESCRIPTION)
-    for i in range(NUMBER_OF_GAMES):
+    for i in range(1, NUMBER_OF_GAMES + 1):
         global correct_answer
         question, correct_answer = game.get_question_and_answer()
         print(question)
