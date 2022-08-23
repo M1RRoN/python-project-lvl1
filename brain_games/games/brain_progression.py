@@ -6,7 +6,7 @@ NUM1_MIN, NUM1_MAX = 1, 10
 NUM2_MIN, NUM2_MAX = 80, 100
 N_MIN, N_MAX = 2, 10
 RANDOM_INDEX_MIN, RANDOM_INDEX_MAX = 0, 4
-NUMBER_OF_PROGRESSION_SYMBOLS = 5
+SYMBOLS_COUNT = 5
 
 
 def get_question_and_answer():
@@ -20,6 +20,6 @@ def get_question_and_answer():
     random_index = random.randint(RANDOM_INDEX_MIN, RANDOM_INDEX_MAX)
     correct_answer = numbers[random_index]
     numbers[random_index] = '..'
-    string = ' '.join(map(str, numbers[:NUMBER_OF_PROGRESSION_SYMBOLS]))
-    question = f'Question: {string}'
+    progression_string = ' '.join(map(str, numbers[:SYMBOLS_COUNT]))
+    question = f'Question: {progression_string}'
     return question, str(correct_answer)
