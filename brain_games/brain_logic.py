@@ -4,19 +4,14 @@ import prompt
 GAMES_COUNT = 3
 
 
-def welcome_player():
+def play(game):
     print('Welcome to the Brain Games!')
-    global name
     name = prompt.string('May I have your name?')
     print(f'Hello, {name}!')
-
-
-def play(game):
-    welcome_player()
     print(game.DESCRIPTION)
     for i in range(1, GAMES_COUNT + 1):
         question, correct_answer = game.get_question_and_answer()
-        print(question)
+        print(f'Question: {question}')
         if correct_answer == 'yes' or 'no':
             answer = prompt.string('You answer: ')
         else:

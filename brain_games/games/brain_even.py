@@ -7,10 +7,13 @@ MAX_NUMBER = 100
 
 
 def get_question_and_answer():
-    number = random.randint(MIN_NUMBER, MAX_NUMBER)
-    question = f'Question: {number}'
-    if number % 2 == 0:
+    question = random.randint(MIN_NUMBER, MAX_NUMBER)
+    return question, is_even(question)
+
+
+def is_even(question):
+    if question % 2 == 0:
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    return question, correct_answer
+    return correct_answer

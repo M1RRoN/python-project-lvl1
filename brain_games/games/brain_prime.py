@@ -9,7 +9,7 @@ MAX_NUMBER = 20
 def get_question_and_answer():
     global number
     number = random.randint(MIN_NUMBER, MAX_NUMBER)
-    question = f'Question: {number}'
+    question = f'{number}'
     if is_prime(number) is True:
         correct_answer = 'yes'
     else:

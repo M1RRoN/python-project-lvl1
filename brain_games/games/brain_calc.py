@@ -10,12 +10,15 @@ def get_question_and_answer():
     num1 = random.randint(MIN_NUM, MAX_NUM)
     num2 = random.randint(MIN_NUM, MAX_NUM)
     choice_of_operator = random.choice('+-*')
-    expression = f'{num1} {choice_of_operator} {num2}'
+    question = f'{num1} {choice_of_operator} {num2}'
+    return question, str(get_answer(num1, num2, choice_of_operator))
+
+
+def get_answer(num1, num2, choice_of_operator):
     if choice_of_operator == '+':
         correct_answer = num1 + num2
     elif choice_of_operator == '-':
         correct_answer = num1 - num2
     elif choice_of_operator == '*':
         correct_answer = num1 * num2
-    question = f'Question: {expression}'
-    return question, str(correct_answer)
+    return correct_answer
